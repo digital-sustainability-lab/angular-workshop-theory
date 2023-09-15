@@ -12,13 +12,15 @@
   - file für testing: component spec.ts
 - input zu templates (inline oder extern) wird automatisch aktualisiert
 - angular material vorstellen
-- routing
-  - routing module
-  - wild card default navigation \*\*
-  - url parameter
-  - router-outlet
-  - verschiedene arten von navbar
-    - routerLink vs. click -> router.navigate
+
+## routing
+
+- routing module
+- wild card default navigation \*\*
+- url parameter
+- router-outlet
+- verschiedene arten von navbar
+  - routerLink vs. click -> router.navigate
 
 ## data binding und directives
 

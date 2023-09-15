@@ -15,7 +15,6 @@
 
 # 2 Routing (0.75h) - A
 
-- angular ma
 - neue route für component
 - wildcard route mit redirect erstellen
 - 2 neue component

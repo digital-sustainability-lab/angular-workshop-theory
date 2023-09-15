@@ -19,8 +19,9 @@ In diesem Exercise gehen wir auf verschiedene Arten des Routings in Angular ein.
 3. Importiere das Menu von Angular Material (mat-menu) und erstelle in der "Navbar" Component ein Menu mit 2 Einträgen
    - der eine Eintrag soll bei klick über einen "RouterLink" auf die "Overview" Component navigieren
    - der zweite Eintrag navigiert einem auf .......
+4. (Bonus) nutze "RouterLinkActive", um den aktiven RouterLink einzufärben/hervorzuheben
 
-## 3. Bonus: Routing über Component
+## 3. Routing über Component
 
 1. Importiere den Router im Component File der "Overview" Component
 2. Erstelle eine Methode welche eine number ID entgegennimmt und auf über die URL `/detail/:id` mit der entsprechenden ID auf die "Detail" Component navigiert
