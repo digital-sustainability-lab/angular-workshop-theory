@@ -38,6 +38,11 @@ Wenn dein Toggle nun angezeigt wird, versuche den angezeigten String je nach Tog
 
 Nun sollte deine App anstelle des Templates einen neuen Komponenten anzeigen. Innerhalb dieses Komponenten sollte ein mat-slide-toggle angezeigt werden, dessen Zustand den Zustand des DOM beeinflusst (angezeigter string)
 
+## 1.4 Applikations Build
+
+Um die Applikation schlussendlich zu benutzen muss ein build ausgeführt werden.
+Dazu führt man im root des Projektordners `ǹg build` aus. Wurde der build korrekt ausgeführt sollte ein Ordner namens `dist` im Projektordner erstellt worden sein
+
 ---
 
 ### Zusatzaufgabe
