@@ -30,14 +30,14 @@
 
 - loop für mat-select mit welchen styling verändert weden kann
   (evlt. stylesheet für transition)
-- zusatzaufgabe: passende mat-icons
+- zusatzaufgabe: passende mat-icons, two-way binding
 
 # 4 Parent & Child Relation (0.75h) - A
 
 - neue component erstellen für card (mit blog-beiträgen, galerie, o.ä.)
 - loop in der parent componente für card erstellen
 - Output() nutzen sobald aus detail ansicht oder "read" / "not read" ngStyle (ausgegraut wenn read)
-- zusatz: ngOnChanges nutzen? ev. snackbar "gelesen"
+- zusatz: ngOnInit()
 
 # 5 Services & Backend Communication (0.5h)
 

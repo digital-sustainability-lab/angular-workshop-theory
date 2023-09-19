@@ -32,7 +32,9 @@
 
 - input()
 - output()
-- ngOnInit(), ngAfterViewInit(), ngOnDestroy(), ngOnChanges()
+- lifecycle hooks
+  - ngOnInit(), ngAfterViewInit(), ngOnDestroy(), ngOnChanges()
+  - https://medium.com/ngconf/angular-lifecycle-hooks-977b73fc66af
 
 ## services & backend communication
 
@@ -47,6 +49,7 @@
 
 - static form Erstellung
 - kurze Info zu dynamic forms
+- ngModel erklären
 
 ## guards/auth
 
