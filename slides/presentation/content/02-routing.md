@@ -5,7 +5,7 @@
 ## Routing Module
 
 - zuständig für das Verhalten der Routes
-  - Mapping der Pfade auf die Components (und Guards)
+  - Mapping der Pfade auf die Komponenten (und Guards)
   - Redirects
   - Wildcard und URL Parameter
 
@@ -13,13 +13,13 @@
 
 ## Router Outlet
 
-- stellt die im Routing Module zugewiesene Component des aktiven Route Pfades dar
+- stellt die im Routing Module zugewiesene Komponente des aktiven Route Pfades dar
 
 --
 
 ## Arten der Navigation...
 
-- über RouterLink in Template Files
+- über RouterLink in HTML Files
 
 ```html
 <a
@@ -28,7 +28,7 @@
 ></a>
 ```
 
-- über Angular Router in Methoden in Component Files
+- über Angular Router in Methoden in `.ts` Files der Komponenten
 
 ```html
 <button (click)="navigateWithCustomBehavior(id)">navigate by id</button>
@@ -42,3 +42,7 @@ navigateWithCustomBehavior(id: number) {
 ```
 
 - absolute und relative Pfade
+
+--
+
+## Your turn :) --> Übung 2

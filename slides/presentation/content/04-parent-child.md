@@ -2,12 +2,20 @@
 
 --
 
-## HTML
+## Was sind Parent & Child?
 
-- Aufruf Child per Tag (Selektor)
+- Parent: Komponente welche andere Komponente aufruft bzw. sich aus diesen aufbaut
+- Child: Sub-Komponente welche durch Parent Komponente (ein/mehrhmalig) aufgerufen wird
+- Beispiel: Eine Parent Komponente ruft eine Header Komponente, eine Home View und eine Footer Komponente als Children auf
+
+--
+
+## HTML in Parent
+
+- Aufruf Child per Selektor
 - Parameter Übergabe
-- \*ngIf für Rendering nach Condition
-- \*ngFor für dynamische Darstellung
+- `*ngIf` für Rendering nach Condition
+- `*ngFor` für dynamische Darstellung
 
 ```html
 <app-card
@@ -30,6 +38,24 @@
 
 --
 
-## Life-cycles
+## Lifecycle hooks
 
-- ngOnInit(), ngAfterViewInit(), ngOnDestroy(), ngOnChanges()
+- Methoden, welche zu einem/mehreren Zeitpunkt(en) durch Angular aufgerufen werden
+- wichtigste:
+  - `ngOnInit()`
+    - wird beim Initialisieren einer Komponente einmalig ausgeführt
+    - Use Case: Initialisieren von Daten (Komponenten Inputs) welche in der Komponente genutzt werden
+  - `ngOnChanges()`
+    - reagiert auf Änderungen der Daten welche in der Komponente verwendet werden
+    - Use Case: Berechnungen von Werten auf Basis von Komponenten Inputs, welche bei Veränderung der Inputs auch aktualisiert werden sollen
+  - `ngAfterViewInit()`
+    - wird nach der Initialisierung des DOM Elemente (HTML Elemente) ausgeführt
+    - Use Case: wenn DOM Elemente referenziert werden sollen
+  - `ngOnDestroy()`
+    - wird aufgerufen, nachdem eine Komponente aus dem UI entfernt wurde
+    - Use Case: für clean up (v.a. unsubscription von Observables), damit unbenutzte Variablen die App nicht unnötig verlangsamen
+- ... weitere, siehe [Angular Doku](https://angular.io/guide/lifecycle-hooks)
+
+--
+
+## Your turn :) --> Übung 4
