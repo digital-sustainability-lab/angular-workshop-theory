@@ -27,7 +27,7 @@
 
 --
 
-## Klasse
+## TS-File in Child
 
 - Decorators markieren Variable als In-/Output
 
