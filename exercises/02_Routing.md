@@ -2,7 +2,7 @@
 
 In diesem Exercise gehen wir auf verschiedene Arten des Routings in Angular ein.
 
-Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Übesricht über die erstellen Blog Posts und eine Ansicht mit Detailinfos zu einzelnen Blog Posts. Zudem werden wir eine Navigation erstellen, um das Routing zu üben.
+Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Übersicht über die erstellten Blog Posts und eine Ansicht mit Detailinfos zu einzelnen Blog Posts verfügbar ist. Zudem werden wir eine Navigation erstellen, um das Routing zu üben und eine weitere Seite auf welcher über ein Formular neue Blog Posts erstellt werden können.
 
 ???? Screenshots
 
