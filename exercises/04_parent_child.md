@@ -1,6 +1,6 @@
 # 04 - Parent-Child Verhalten
 
-In dieser Übung werden wir das Parent-Child Verhalten mithilfe eines `*ngFor` Loops und den Input und Output Directives erkunden.
+In dieser Übung werden wir das Parent-Child Verhalten mithilfe eines `*ngFor` Loops und den Input und Output Directives erkunden. Dabei werden wir die in Übung 3 erstellte `mat-card` von der "overview" Komponente in eine separate Komponente auslagern.
 
 ## 4.1 Child Input
 
@@ -27,6 +27,8 @@ In dieser Übung werden wir das Parent-Child Verhalten mithilfe eines `*ngFor` L
 
 ## Zusatzaufgabe
 
-1. Nutze das "read" Attribut, um mithilfe eines `mat-toggle` und eines `*ngIf` gelesene Posts ausblenden zu können (Toggle an = alle Posts, Toggle aus = nur ungelesene Posts). Zeige je nach Toggle Position per Interpolation "all" bzw. "unread" an.
-2. Nutze das "read" Attribut in der "card" Komponente, um der `mat-card` per `ngClass` die CSS Klassen `read` bzw. `unread` zuzuweisen.
+1. Erstelle eine `sortRead()` Methode in der "overview" Komponente, welche das Array so sortiert, dass zuerst alle Posts zurückgegeben werden, welche noch nicht "read" sind
+2. Loope beim HTML File durch den Return Wert dieser Methode anstelle des unsortierten Arrays
+3. Nutze das "read" Attribut, um mithilfe eines `mat-toggle` und eines `*ngIf` gelesene Posts ausblenden zu können (Toggle an = alle Posts, Toggle aus = nur ungelesene Posts). Zeige je nach Toggle Position per Interpolation "all" bzw. "unread" an.
+4. Nutze das "read" Attribut in der "card" Komponente, um der `mat-card` per `ngClass` die CSS Klassen `read` bzw. `unread` zuzuweisen.
    ?????? nur wenn css-klassen bereitgestellt
