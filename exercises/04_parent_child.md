@@ -21,10 +21,12 @@ In dieser Übung werden wir das Parent-Child Verhalten mithilfe eines `*ngFor` L
 ## 4.3 Lifecycle Hooks
 
 1. Nutze die `ngOnInit()` Methode in der "detail" Komponente, um die über die URL als Parameter übergebene `id` als Variable zu initialisieren.
-2.
+2. Importiere hier ebenso den Blog Post Array und erstelle eine Methode `getDetail(id)` in welcher über die `id` der Zugehörige Post geholt und returned wird
+3. Rufe die eben erstelle Methode bei Komponenten-Initialisierung auf, um den ausgewählten Post einer Variable `currentPost` zuzuweisen.
+4. Stelle alle Post Informationen (Attribute) im HTML File dar.
 
 ## Zusatzaufgabe
 
-1. Nutze das neue "read" Attribut, um mithilfe eines `mat-toggle` und eines `*ngIf` gelesene Posts ausblenden zu können (Toggle an = alle Posts, Toggle aus = nur ungelesene Posts). Zeige je nach Toggle Position per Interpolation "all" bzw. "unread" an.
+1. Nutze das "read" Attribut, um mithilfe eines `mat-toggle` und eines `*ngIf` gelesene Posts ausblenden zu können (Toggle an = alle Posts, Toggle aus = nur ungelesene Posts). Zeige je nach Toggle Position per Interpolation "all" bzw. "unread" an.
 2. Nutze das "read" Attribut in der "card" Komponente, um der `mat-card` per `ngClass` die CSS Klassen `read` bzw. `unread` zuzuweisen.
    ?????? nur wenn css-klassen bereitgestellt
