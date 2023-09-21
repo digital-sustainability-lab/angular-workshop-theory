@@ -1,4 +1,4 @@
-## 06 Angular Forms
+# 06 Angular Forms
 
 --
 
@@ -10,46 +10,57 @@
 
 --
 
-## Reactive Forms
+## Template-driven Forms
+
+- Logik in Template (HTML File)
+- geignet für einzelne Formular Felder
 
 --
 
-## Template-driven Forms
+## Reactive Forms
+
+- Logik in `.ts` File
+- geeignet für
+  - grössere Formulare
+  - dynamische Formulare
+- besser testbar
 
 --
 
 ## ngModel Directive
 
-- wird standalone oder innerhalb eines grösseren Formulares genutzt
-- bindet die Werte von HTML control-Elementen (input, select, text-area) an die Daten des .ts Files der entsprechendend Komponente
-- kann mit one- oder two-way-binding genutzt werden
-  - one-way: `[ngModel]` Änderung Model Input (.ts) -> Änderung in View (.html)
-  - two-way: `[(ngModel)]` automatische Synchronisation des Wertes im UI mit dem domain model (zugrunde liegenden Daten)
+- standalone oder innerhalb eines grösseren Formulares
+- bindet Werte von HTML control-Elementen (`input`, `select`, `text-area`) an Daten des `.ts` Files
+- one- oder two-way-binding
+  - _one-way_: `[ngModel]` Änderung Model Input (.ts) -> Änderung in View (.html)
+  - _two-way_: `[(ngModel)]` automatische Synchronisation Wert im UI mit domain model
 
 --
 
 ## Static vs. dynamic Forms
 
-- wenn das Formular und dessen Attribute von vornherein bekannt -> static
-- wenn unbekannt bzw. veränderbar -> dynamic
-  - FormBuilder
+- Formular & Attribute von vornherein bekannt -> static
+- unbekannt bzw. veränderbar -> dynamic
+  - `FormBuilder` um `FormGroup` bzw. `FormArray` zu erstellen/verändern
 
 --
 
 ## FormGroup vs. FormArray
 
-- FormGroup:
+- **FormGroup**:
   - Formular als Object
-  - Verschachtelung (FormGroup of FormGroups) möglich
-  - Use Case: v.a. wenn Anzahl Felder bekannt
-- FormArray:
+  - Verschachtelung (`FormGroup` of `FormGroups`) möglich
+  - _Use Case_: v.a. wenn Anzahl Felder bekannt
+- **FormArray**:
   - Formular als Array
-  - Verschachtelung (FormArray of FormGroups) möglich
-  - Use Case: v.a. wenn Anzahl Felder unbekannt
+  - Verschachtelung (`FormArray` of `FormGroups`) möglich
+  - _Use Case_: v.a. wenn Anzahl Felder unbekannt
 
 --
 
 ## Beispiel I: einzelnes Control-Element
+
+(Template-driven)
 
 ```html
 <input [(ngModel)]="name" #ctrl="ngModel" required />
@@ -68,25 +79,55 @@
   }
 ```
 
+--
+
 ## Beispiel II: statisches Formular
+
+(Template-driven)
 
 ```html
 <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
-  <input name="first" ngModel required #first="ngModel" />
-  <input name="last" ngModel />
+  <input name="first" type="text" ngModel required #first="ngModel" />
+  <input name="last" type="text" ngModel />
   <button>Submit</button>
 </form>
-
-<p>First name value: {{ first.value }}</p>
-<p>First name valid: {{ first.valid }}</p>
-<p>Form value: {{ f.value | json }}</p>
-<p>Form valid: {{ f.valid }}</p>
 ```
 
 ```typescript
   onSubmit(f: NgForm) {
     if (f.valid) {
         return this.dataService.storeInput(f.value)
+    }
+  }
+```
+
+[Quelle](https://angular.io/api/forms/NgModel)
+
+--
+
+## Beispiel II: statisches Formular
+
+(reactive)
+
+```html
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <input formControlName="first" type="text" />
+  <input formControlName="last" type="text" />
+  <button type="submit">Submit</button>
+</form>
+```
+
+```typescript
+    myForm: FormGroup;
+    initForm() {
+        this.myForm = new FormGroup({
+            'first': new FormControl(null, Validators.required),
+            'last': new FormControl(null)
+        })
+    }
+  onSubmit() {
+    if (this.myForm.valid) {
+        return this.dataService.storeInput(this.myForm.value)
     }
   }
 ```
