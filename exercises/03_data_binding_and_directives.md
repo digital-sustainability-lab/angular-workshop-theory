@@ -3,7 +3,7 @@
 ## 3.1 Looping
 
 Füge den untenstehenden Datensatz als statischen Array im `.ts` der erstellen Overview Kompnenten ein.
-Iteriere mit Hilfe von `ngFor` über den Datensatz und erstelle eine `mat-card` für jedes Datenobjekt
+Iteriere mit Hilfe von `ngFor` über den Datensatz und erstelle eine `mat-card` mit beliebigem `mat-card-content` (bspw. "Ich bin eine Karte") für jedes Datenobjekt. Der Toggle kann wieder entfernt werden
 
 ```typescript
 // Beispieldaten
@@ -39,9 +39,24 @@ Iteriere mit Hilfe von `ngFor` über den Datensatz und erstelle eine `mat-card` 
 ];
 ```
 
+Tipp: Wenn du den mat-card loop in ein div mit der Klasse `.container` verschiebst und folgendes css in `overview.component.css` einfügst sieht alles ein wenig übersichtlicher aus
+
+```css
+mat-card {
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+```
+
 ## 3.2 \*ngIf/else
 
-Erstelle ein div innerhalb des loops der angezeigt wird, wenn `show` true ist (Inhalt des divs kann fri definiert werden, bspw. "ich werde ngezeigt")
+Erstelle eine Kondition dass `mat-card-content` nur angezeigt wird, wenn `show` true ist (Inhalt der mat-card ist nicht relevant)
 
 ## 3.3 Styling
 
@@ -69,4 +84,6 @@ Definiere danach das Styling und die Class der jeweiligen `mat-card` durch die g
 
 ### Zusatzaufgabe
 
-Two-way binding mit mat-select????
+Versuche anstelle des des Karteninhaltes, die Karte selbst je nach Wert von Show ein- oder auszublenden. Was muss dabei beachtet werden?
+
+Probiere jeder Karte ein `mat-select` hinzuzufügen, mithilfe dessen die gewünschte Schriftfarbe für die Karte ausgewählt werden kann (Hinweis: verwende two-way-binding)

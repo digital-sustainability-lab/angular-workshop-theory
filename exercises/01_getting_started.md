@@ -22,7 +22,7 @@ siehe auch die offizielle Angular Dokumentation [hier](https://angular.io/guide/
 ## 1.2 Template mit eigenem Komponenten ersetzen
 
 In `app.component.html` befindet sich ein Platzhalter Template lösche dieses.
-Erstelle danach eine eigene Komponente namens `overview` (manuell oder via Angular Cli), die du im `app.component.html` einfügst (hint: `router-outlet` kann für den Moment noch ignoriert werden)
+Erstelle danach eine eigene Komponente namens `overview` (manuell oder via Angular Cli), die du im `app.component.html` einfügst (Hinweis: `router-outlet` kann für den Moment noch ignoriert werden)
 
 ## 1.3 Zustand des DOM dynamisch modifizieren & Angular Material
 
