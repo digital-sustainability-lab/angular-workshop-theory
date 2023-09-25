@@ -2,23 +2,71 @@
 
 ## 3.1 Looping
 
-Füge ein mat-select in deinem Komponenten ein. Versuche die verschiedenen Optionen in einem Array der .ts Datei zu definieren und durch einen loop (`*ngFor`) anzuzeigen.
-Beispielarray:
+Füge den untenstehenden Datensatz als statischen Array im `.ts` der erstellen Overview Kompnenten ein.
+Iteriere mit Hilfe von `ngFor` über den Datensatz und erstelle eine `mat-card` für jedes Datenobjekt
 
 ```typescript
-const options = ["Option 1", "Option 2", "Option 3", "Option 4"];
+// Beispieldaten
+[
+  {
+    title: "Fancy first blog post",
+    description: "Hello world! Here I am!",
+    color: "blue",
+    class: "special",
+    show: true,
+  },
+  {
+    title: "Fancy second blog post",
+    description: "Hello world! Here I am!",
+    color: "black",
+    class: "special",
+    show: true,
+  },
+  {
+    title: "Fancy third blog post",
+    description: "Hello world! Here I am!",
+    color: "green",
+    class: "normal",
+    show: false,
+  },
+  {
+    title: "Fancy fourth blog post",
+    description: "Hello world! Here I am!",
+    color: "green",
+    class: "normal",
+    show: true,
+  },
+];
 ```
 
 ## 3.2 \*ngIf/else
 
-Erstelle nun zwei divs und zeige abhängig von der ausgewählten Option im `mat-select` das eine oder andere div an
+Erstelle ein div innerhalb des loops der angezeigt wird, wenn `show` true ist (Inhalt des divs kann fri definiert werden, bspw. "ich werde ngezeigt")
 
 ## 3.3 Styling
 
-In einem letzten Schritt versuchen wir, das Styling je nach getroffener Auswahl im `mat-select abzuändern` (bspw. Änderung Schriftfarbe). Versuche diese Übung mit `ngStyle` und/oder `ngClass` zu lösen
+Füge die folgenden Angaben in deinem Style Sheet ein.
+
+```css
+.normal {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.special {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  font-style: oblique;
+  text-decoration: underline overline;
+}
+```
+
+Definiere danach das Styling und die Class der jeweiligen `mat-card` durch die gegebenen style Attribute des Datenobjekts (color respektive class)
 
 ---
 
 ### Zusatzaufgabe
 
-Mache dich mit `mat-icons` vertraut. Versuche ein mat-icon einzufügen und jenes je nach `mat-select` Auswahl dynamisch anzupassen
+Two-way binding mit mat-select????

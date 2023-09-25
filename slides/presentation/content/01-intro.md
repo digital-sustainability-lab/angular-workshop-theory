@@ -1,4 +1,4 @@
-# Hands-on Angular Workshop
+# Hands-On Workshop Angular
 
 Rowing Sessions Fincon 28.09.23
 
@@ -10,7 +10,12 @@ Digital Sustainability Lab
 
 ## Programm
 
-## 💻️ .. 🤔 .. ⭐
+- Einführung
+- Routing
+- Data Binding & Directives
+- Parent Child Interaktionen
+- Services & HTTP-Requests
+- Forms
 
 ---
 
@@ -18,16 +23,16 @@ Digital Sustainability Lab
 
 #### Angular im Allgemeinen ist...
 
-- open source
-- man hat schnell mal was
-- component based
-- scalabe
-- typescript based
-- gibt bereits viele libraries /features (router, forms, anomations), testing...
+- Open Source
+- basierend auf Komponenten
+- skalierbar
+- typescript
+- gibt bereits vieles out of the box
+<!-- viele libraries / features (router, forms, anomations), testing... -->
 
 --
 
-## Components
+## Komponenten
 
 - Angular Applikationen sind auf Komponenten aufgebaut
 - Jede Komponente beinhaltet
@@ -50,11 +55,11 @@ import { Component } from "@angular/core";
   `,
 })
 export class HelloWorldComponent {
-  // The code in this class drives the component's behavior.
+  // define behavior
 }
 ```
 
-Der oben definierte Komponent kann schliesslich via selector (`hello-world`) in anderen HTML templates aufgerufen werden
+<!-- Die oben definierte Komponente kann schliesslich via selector (hier `hello-world`) in anderen HTML Templates aufgerufen werden -->
 
 --
 
@@ -117,11 +122,13 @@ export class HelloWorldComponent {
 }
 ```
 
+ <!-- evt. erwähnen dass doctype etc. nicht noch definiert werden muss, wird alles von Angular gehandhabt-->
+
 --
 
 ## Dynamisches DOM Rendering
 
-DOM wird Veränderungen des component state automatisch angepasst
+DOM wird bei Veränderungen des Zustands der Komponente automatisch angepasst
 
 ```html
 <h2>Hello World</h2>
@@ -129,14 +136,14 @@ DOM wird Veränderungen des component state automatisch angepasst
 ```
 
   <!-- Syntax {{}} für dynamisches rendering DOM wird
-  aktualisiert sobald state von component angepasst wird -->
+  aktualisiert sobald state von component angepasst wird, aber dazu später mehr-->
 
 --
 
 ## Angular Material
 
 - Material Design für Angular
-- Vorgefertigte Komponenten
+- Sammlung vorgefertigter UI Komponenten
 
 --
 

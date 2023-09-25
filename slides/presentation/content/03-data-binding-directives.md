@@ -1,12 +1,11 @@
-## 03 Data Binding & directives
+## 03 Data Binding & Directives
 
 --
 
 ### Data Binding
 
 - hilft Ansicht aktuell zu halten
-- bspw. für Button state oder user data
-- statisch oder dynamisch (?)
+- bspw. für Zustand eines Buttons oder Userdaten
 
 --
 
@@ -23,7 +22,7 @@ source (`.ts`) -> view (`.html`)
 - Attribut
 
 ```html
-<mat-slide-toggle [checked]="isToggleChecked"> Slide me!</mat-slide-toggle>
+<mat-slide-toggle [checked]="isToggleChecked"> Slide me! </mat-slide-toggle>
 ```
 
 --

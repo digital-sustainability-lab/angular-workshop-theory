@@ -11,7 +11,7 @@ npm install -g @angular/cli
 
 ng new my-app
 
-# teste nun ob die Applikation läuft mit, es sollte automatisch ein Browserfenster geöffnet werden
+# teste nun ob die Applikation läuft, es sollte automatisch ein Browserfenster geöffnet werden
 # falls nicht öffne http://localhost:4200
 cd my-app
 ng serve --open
@@ -21,30 +21,25 @@ siehe auch die offizielle Angular Dokumentation [hier](https://angular.io/guide/
 
 ## 1.2 Template mit eigenem Komponenten ersetzen
 
-Im `app.component.html` befindet sich ein Platzhalter template lösche dieses.
-Erstelle danach einen eigenen Komponenten, den du im `app.component.html` einfügst (hint: `router-outlet` kann für den Moment noch ignoriert werden)
+In `app.component.html` befindet sich ein Platzhalter Template lösche dieses.
+Erstelle danach eine eigene Komponente, die du im `app.component.html` einfügst (hint: `router-outlet` kann für den Moment noch ignoriert werden)
 
 ## 1.3 Zustand des DOM dynamisch modifizieren & Angular Material
 
-Installiere Angular Material in deiner App (welches theme gewählt wird spielt keine Rolle)
+Installiere Angular Material in deiner App (Theme frei wählbar)
 
 ```bash
 ng add @angular/material
 ```
 
-Füge nun ein slide-toggle in das template deines neuen Komponenten ein. Dazu musst du den Material Component im App Module registrieren, siehe auch unter `display a component` in der [offiziellen Dokumentation](https://material.angular.io/guide/getting-started)
+Füge nun ein `slide-toggle` in das Template deiner neuen Komponente ein. Dazu musst du den Material Component im App Module registrieren, siehe auch unter `display a component` in der [offiziellen Dokumentation](https://material.angular.io/guide/getting-started)
 
 Wenn dein Toggle nun angezeigt wird, versuche den angezeigten String je nach Toggle Zustand anzupassen. Bspw. wenn der Toggle an ist zeigt es an `true` und wenn er aus ist wird `false` angezeigt.
 
-Nun sollte deine App anstelle des Templates einen neuen Komponenten anzeigen. Innerhalb dieses Komponenten sollte ein mat-slide-toggle angezeigt werden, dessen Zustand den Zustand des DOM beeinflusst (angezeigter string)
-
-## 1.4 Applikations Build
-
-Um die Applikation schlussendlich zu benutzen muss ein build ausgeführt werden.
-Dazu führt man im root des Projektordners `ng build` aus. Wurde der build korrekt ausgeführt sollte ein Ordner namens `dist` im Projektordner erstellt worden sein
+Nun sollte deine App also anstelle des Default Templates eine neue Komponente anzeigen. Innerhalb dieser Komponente sollte ein `mat-slide-toggle` angezeigt werden, dessen Zustand den Zustand des DOM beeinflusst (angezeigter string)
 
 ---
 
 ### Zusatzaufgabe
 
-Definiere default Zustand und Farbe des Toggles, versuche sonst auch noch die Position des Labels zu verändern (siehe [API](https://material.angular.io/components/slide-toggle/api) des slide toggles für mehr Informationen)
+Definiere den Default Zustand und Farbe des Toggles, versuche sonst auch noch die Position des Labels zu verändern (siehe [API](https://material.angular.io/components/slide-toggle/api) des slide toggles für mehr Informationen)
