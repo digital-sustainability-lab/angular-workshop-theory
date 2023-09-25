@@ -19,7 +19,9 @@
 
 ## Arten der Navigation...
 
-- über RouterLink in HTML Files
+--
+
+### ...über RouterLink in HTML Files
 
 ```html
 <a
@@ -28,18 +30,45 @@
 ></a>
 ```
 
-- über Angular Router in Methoden in `.ts` Files der Komponenten
+```html
+<button
+  [routerLink]="'/navigate/here'"
+  routerLinkActive="['active','other-css-class']"
+></button>
+```
+
+--
+
+### ...über Angular Router in Methoden in `.ts` Files der Komponenten
 
 ```html
 <button (click)="navigateWithCustomBehavior(id)">navigate by id</button>
 ```
 
 ```typescript
+constructor(private router: Router) {}
+
 navigateWithCustomBehavior(id: number) {
     // custom logic...
     this.router.navigate([`navigate/by/${id}`])
 }
 ```
+
+--
+
+## Abrufen von URL Paramentern
+
+- mit ActivatedRoute
+
+```typescript
+id: string;
+constructor(private route: ActivatedRoute) {
+  this.id = this.route.snapshot.paramMap.get("id");
+}
+
+```
+
+--
 
 - absolute und relative Pfade
 

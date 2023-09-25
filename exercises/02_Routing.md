@@ -8,7 +8,7 @@ Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Über
 
 ## 2.1 Neue Routes erstellen
 
-1. Erstelle eine neue Route `/overview` über welche die in der vorherigen Übung erstellte Komponente erreicht werden kann
+1. Erstelle eine neue Route `/overview` über welche die in der vorherigen Übung erstellte "overview" Komponente erreicht werden kann
 2. Erstelle eine `wildcard` Route, welche alle weiteren URL Pfade auf die zuvor erstellte Route weiterleitet
 
 ## 2.2 Router-Outlet und Routerlink nutzen
@@ -18,17 +18,24 @@ Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Über
    - eine mit Namen "detail", welche als Detail Ansicht der Blog Posts
 2. Integriere folgendes im App Template (HTML) file
    - die Navbar Komponente
-   - einen `<main>` Tag
+   - einen `<main>` Tag, in welchen die "overview" Komponente verschoben wird
    - den `<router-outlet>` Tag
-3. Importiere das Menu von Angular Material (`mat-menu`) und erstelle in der "Navbar" Komponente ein Menu mit 2 Einträgen
-   - der erste Eintrag "Übersicht" soll bei klick über einen `RouterLink` auf die bereits existierende "overview" Komponente navigieren
-   - der zweite Eintrag "Neuer Post"????? dient vorerst als Placeholder und wird in einer späteren Übung verwendet
+3. Importiere das Menu und Button von Angular Material ([`mat-menu`](https://v7.material.angular.io/components/menu/overview)) und `mat-button` und erstelle in der "navbar" Komponente ein Menu mit 2 Einträgen
+   - der erste Eintrag "Overview" soll bei klick über einen `RouterLink` auf die bereits existierende "overview" Komponente navigieren
+   - der zweite Eintrag "New Post" dient vorerst als Placeholder und wird in einer späteren Übung verwendet
 
 ## 2.3 Routing in der Komponente mit URL Parameter
 
 1. Importiere den Router im `.ts` File der "overview" Komponente
-2. Erstelle eine Methode welche eine number ID entgegennimmt und auf über die URL `/detail/:id` mit der entsprechenden ID auf die "Detail" Komponente navigiert
+2. Erstelle eine Methode `navigateToDetail` welche eine number ID entgegennimmt und auf über die URL `/detail/:id` mit der entsprechenden ID auf die "Detail" Komponente navigiert, wobei die ID aus dem Input verwendet werden soll.
+3. Erstelle die neue Route und rufe über diese die "detail" Komponente auf. Die "detail" Komponente werden wir in kommenden Übungen weiter ausbauen.
 
 ### Zusatzaufgabe
 
-Nutze `RouterLinkActive`, um den aktiven RouterLink einzufärben/hervorzuheben
+Nutze `RouterLinkActive`, um den aktiven RouterLink einzufärben/hervorzuheben, indem die css-Klasse `active` zugewiesen wird. Als css-Klasse kann das untenstehende Snippet verwendet und beliebig angepasst werden.
+
+```css
+.active {
+  background-color: lightblue;
+}
+```
