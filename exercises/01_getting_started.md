@@ -22,7 +22,7 @@ siehe auch die offizielle Angular Dokumentation [hier](https://angular.io/guide/
 ## 1.2 Template mit eigenem Komponenten ersetzen
 
 In `app.component.html` befindet sich ein Platzhalter Template lösche dieses.
-Erstelle danach eine eigene Komponente, die du im `app.component.html` einfügst (hint: `router-outlet` kann für den Moment noch ignoriert werden)
+Erstelle danach eine eigene Komponente namens `overview` (manuell oder via Angular Cli), die du im `app.component.html` einfügst (hint: `router-outlet` kann für den Moment noch ignoriert werden)
 
 ## 1.3 Zustand des DOM dynamisch modifizieren & Angular Material
 
@@ -34,9 +34,9 @@ ng add @angular/material
 
 Füge nun ein `slide-toggle` in das Template deiner neuen Komponente ein. Dazu musst du den Material Component im App Module registrieren, siehe auch unter `display a component` in der [offiziellen Dokumentation](https://material.angular.io/guide/getting-started)
 
-Wenn dein Toggle nun angezeigt wird, versuche den angezeigten String je nach Toggle Zustand anzupassen. Bspw. wenn der Toggle an ist zeigt es an `true` und wenn er aus ist wird `false` angezeigt.
+Versuche das Label des toggles so zu ändern, dass es dem Wert einer im `.ts` definierten Variabel entspricht
 
-Nun sollte deine App also anstelle des Default Templates eine neue Komponente anzeigen. Innerhalb dieser Komponente sollte ein `mat-slide-toggle` angezeigt werden, dessen Zustand den Zustand des DOM beeinflusst (angezeigter string)
+Nun sollte deine App also anstelle des Default Templates eine neue Komponente anzeigen. Innerhalb dieser Komponente sollte ein `mat-slide-toggle` angezeigt werden, dessen Label im `.ts` definiert ist.
 
 ---
 
