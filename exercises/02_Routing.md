@@ -18,9 +18,10 @@ Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Über
    - eine mit Namen "detail", welche als Detail Ansicht der Blog Posts
 2. Integriere folgendes im App Template (HTML) file
    - die Navbar Komponente
-   - einen `<main>` Tag, in welchen die "overview" Komponente verschoben wird
+   - einen `<main>` Tag
    - den `<router-outlet>` Tag
-3. Importiere das Menu und Button von Angular Material ([`mat-menu`](https://v7.material.angular.io/components/menu/overview)) und `mat-button` und erstelle in der "navbar" Komponente ein Menu mit 2 Einträgen
+3. Der direkte Aufruf der "overview" Komponente in der App Komponente kann nun entfernt werden, da dieser dynamisch über den `router-outlet` Tag aufgerufen wird.
+4. Importiere das Menu und Button von Angular Material ([`mat-menu`](https://v7.material.angular.io/components/menu/overview)) und `mat-button` und erstelle in der "navbar" Komponente ein Menu mit 2 Einträgen
    - der erste Eintrag "Overview" soll bei klick über einen `RouterLink` auf die bereits existierende "overview" Komponente navigieren
    - der zweite Eintrag "New Post" dient vorerst als Placeholder und wird in einer späteren Übung verwendet
 
@@ -29,6 +30,7 @@ Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Über
 1. Importiere den Router im `.ts` File der "overview" Komponente
 2. Erstelle eine Methode `navigateToDetail` welche eine number ID entgegennimmt und auf über die URL `/detail/:id` mit der entsprechenden ID auf die "Detail" Komponente navigiert, wobei die ID aus dem Input verwendet werden soll.
 3. Erstelle die neue Route und rufe über diese die "detail" Komponente auf. Die "detail" Komponente werden wir in kommenden Übungen weiter ausbauen.
+4. Erstelle in der "overview" Komponente einen Button, welcher die oben genannte Methode mit der ID=1 aufruft.
 
 ### Zusatzaufgabe
 
