@@ -107,15 +107,17 @@ import { HttpClient } from "@angular/common/http";
 @Injectable()
 export class MyService {
   constructor(private http: HttpClient) {}
+
+  getData(): Observable<Data> {
+    return this.http.get<Data>("your-url.com");
+  }
 }
 ```
 
 ## HTTP-Requests
 
 ```typescript
-this.myService
-  .getData()
-  .subscribe((data: Config) => (this.serviceData = { ...data }));
+this.myService.getData().subscribe((data: Data) => (this.serviceData = data));
 ```
 
 <!-- wichtig: wenn keine subscription vorhanden ist-> kein request gesendet
