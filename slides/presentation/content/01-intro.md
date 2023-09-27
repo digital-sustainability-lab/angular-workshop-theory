@@ -27,8 +27,9 @@ Digital Sustainability Lab
 - basierend auf Komponenten
 - skalierbar
 - typescript
-- gibt bereits vieles out of the box
-<!-- viele libraries / features (router, forms, anomations), testing... -->
+
+Note:
+gibt bereits vieles out of the box bspw libraries / features (router, forms, anomations), testing...
 
 --
 
@@ -59,7 +60,8 @@ export class HelloWorldComponent {
 }
 ```
 
-<!-- Die oben definierte Komponente kann schliesslich via selector (hier `hello-world`) in anderen HTML Templates aufgerufen werden -->
+Note:
+Die oben definierte Komponente kann schliesslich via selector (hier `hello-world`) in anderen HTML Templates aufgerufen werden
 
 --
 
@@ -69,8 +71,7 @@ export class HelloWorldComponent {
 <hello-world></hello-world>
 ```
 
-<!-- alle Inhalte, die im Template des `hello-world` Komponenten definiert wurden, werden als children von
-`<hello-world></hello-world>` angezeigt sprich: -->
+
 
 ```html
 <hello-world>
@@ -78,7 +79,9 @@ export class HelloWorldComponent {
   <p>This is my first component!</p>
 </hello-world>
 ```
-
+Note:
+alle Inhalte, die im Template des `hello-world` Komponenten definiert wurden, werden als children von
+`<hello-world></hello-world>` angezeigt sprich:
 --
 
 ## HTML-Templates
@@ -99,9 +102,9 @@ export class HelloWorldComponent {
   // define behavior
 }
 ```
-
-<!-- how to be rendered, can be defined inline or by file path, Syntax {{}} für dynamisches rendering DOM wird
-aktualisiert sobald state von component angepasst wird -->
+Note:
+how to be rendered, can be defined inline or by file path, Syntax {{}} für dynamisches rendering DOM wird
+aktualisiert sobald state von component angepasst wird
 
 --
 
@@ -122,7 +125,8 @@ export class HelloWorldComponent {
 }
 ```
 
- <!-- evt. erwähnen dass doctype etc. nicht noch definiert werden muss, wird alles von Angular gehandhabt-->
+Note:
+evt. erwähnen dass doctype etc. nicht noch definiert werden muss, wird alles von Angular gehandhabt
 
 --
 
@@ -135,8 +139,9 @@ DOM wird bei Veränderungen des Zustands der Komponente automatisch angepasst
 <p>This is my first component! {{my_var}}</p>
 ```
 
-  <!-- Syntax {{}} für dynamisches rendering DOM wird
-  aktualisiert sobald state von component angepasst wird, aber dazu später mehr-->
+Note:
+Syntax {{}} für dynamisches rendering DOM wird
+  aktualisiert sobald state von component angepasst wird, aber dazu später mehr
 
 --
 
@@ -148,3 +153,5 @@ DOM wird bei Veränderungen des Zustands der Komponente automatisch angepasst
 --
 
 ## Your turn :) --> Übung 1
+
+Übungen & slides findet ihr unter:

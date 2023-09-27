@@ -87,7 +87,8 @@
 
 ```html
 <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
-  <input name="first" type="text" ngModel required #first="ngModel" />
+  <input name="first" type="text" ngModel
+    required #first="ngModel" />
   <input name="last" type="text" ngModel />
   <button>Submit</button>
 </form>
@@ -118,13 +119,13 @@
 ```
 
 ```typescript
-    myForm: FormGroup;
-    initForm() {
-        this.myForm = new FormGroup({
-            'first': new FormControl(null, Validators.required),
-            'last': new FormControl(null)
-        })
-    }
+  myForm: FormGroup;
+  initForm() {
+      this.myForm = new FormGroup({
+        'first': new FormControl(null, Validators.required),
+        'last': new FormControl(null)
+       })
+  }
   onSubmit() {
     if (this.myForm.valid) {
         return this.dataService.storeInput(this.myForm.value)

@@ -76,7 +76,7 @@ class HeroListComponent {
 
 ## HTTP-Requests
 
-HTTP Requests können mithilfe des HTTP CLients gemacht werden
+HTTP Requests können mithilfe des HTTP Clients gemacht werden
 
 ```typescript
 // app.module.ts
@@ -87,8 +87,7 @@ import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   imports: [
     BrowserModule,
-    // import HttpClientModule after BrowserModule.
-    HttpClientModule,
+    HttpClientModule,// import after BrowserModule.
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
@@ -117,12 +116,12 @@ export class MyService {
 ## HTTP-Requests
 
 ```typescript
-this.myService.getData().subscribe((data: Data) => (this.serviceData = data));
+this.myService.getData()
+  .subscribe((data: Data) => (this.serviceData = data));
 ```
 
-<!-- wichtig: wenn keine subscription vorhanden ist-> kein request gesendet
-Observables? https://angular.io/guide/observables
-https://angular.io/guide/http-server-communication-->
+Note:
+wichtig: wenn keine subscription vorhanden ist-> kein request gesendet
 
 --
 
