@@ -10,7 +10,7 @@ Benutze den [HTTP-Client](https://angular.io/api/common/http/HttpClient#usage-no
 
 ## 5.3 Verwendung von Daten in Komponenten
 
-Versuche nun die vom Request erhaltenen Daten im Komponenten zu verwenden anstelle des statisch definierten Arrays. Der loop sollte sich nun also auf die live Daten des Backends beziehen und nicht mehr auf im Angular Projekt statisch definierte Daten
+Versuche nun die vom Request erhaltenen Daten in der Komponente zu verwenden anstelle des statisch definierten Arrays. Der loop sollte sich nun also auf die live Daten des Backends beziehen und nicht mehr auf im Angular Projekt statisch definierte Daten
 
 ### Zusatzaufgabe
 

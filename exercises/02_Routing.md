@@ -2,9 +2,12 @@
 
 In diesem Exercise gehen wir auf verschiedene Arten des Routings in Angular ein.
 
-Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Übersicht über die erstellten Blog Posts und eine Ansicht mit Detailinfos zu einzelnen Blog Posts verfügbar ist. Zudem werden wir eine Navigation erstellen, um das Routing zu üben und eine weitere Seite auf welcher über ein Formular neue Blog Posts erstellt werden können.
+Als Beispielprojekt werden wir eine simple Blog-Seite erstellen, auf welcher eine Übersicht über die erstellten Blog Posts und eine Ansicht mit Detailinfos zu einzelnen Blog Posts verfügbar ist. Zudem werden wir eine Navigation erstellen, um das Routing zu üben und eine weitere Seite auf welcher über ein Formular neue Blog Posts erstellt werden können.
 
-???? Screenshots
+## Eine Voransicht des Endproduktes
+![Overview](./assets/Overview.png "Overview")
+![Detailview](./assets/Detailview.png "Detailview")
+![Form](./assets/Form.png "Form")
 
 ## 2.1 Neue Routes erstellen
 
@@ -21,7 +24,7 @@ Als Beispielprojekt werden wir eine Blog-Seite erstellen, auf welcher eine Über
    - einen `<main>` Tag
    - den `<router-outlet>` Tag
 3. Der direkte Aufruf der "overview" Komponente in der App Komponente kann nun entfernt werden, da dieser dynamisch über den `router-outlet` Tag aufgerufen wird.
-4. Importiere das Menu und Button von Angular Material ([`mat-menu`](https://v7.material.angular.io/components/menu/overview)) und `mat-button` und erstelle in der "navbar" Komponente ein Menu mit 2 Einträgen
+4. Importiere das Menu und Button von Angular Material [`mat-menu`](https://v7.material.angular.io/components/menu/overview) und `mat-button` und erstelle in der "navbar" Komponente ein Menu mit 2 Einträgen
    - der erste Eintrag "Overview" soll bei klick über einen `RouterLink` auf die bereits existierende "overview" Komponente navigieren
    - der zweite Eintrag "New Post" dient vorerst als Placeholder und wird in einer späteren Übung verwendet
 

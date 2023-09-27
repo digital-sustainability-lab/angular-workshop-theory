@@ -8,11 +8,11 @@ Theorie Slides und Übungen
 
 ## Wichtigste Git Befehle
 
-Nachfolgend die wichtigsten Befehle für die Interaktion mit git und darüber ebenfalls mit Remote Repositories
+Nachfolgend die wichtigsten Befehle für die Interaktion mit git und darüber ebenfalls mit remote Repositories
 
-- Remote Repository abbild lokal herunterladen: `git clone <REPOSITORY>`
-- Änderungen auf dem Remote Repository ins eigene lokale Abbild laden: `git pull`
+- remote Repository abbild lokal herunterladen: `git clone <repository>`
+- Änderungen auf dem remote Repository ins eigene lokale Abbild laden: `git pull`
 - Änderungen im Repository versionieren (speichern):
   - hinzufügen zur Versionierung `git add .`
   - mit einer Änderungsnachricht versehen `git commit -m "add new feature"`
-- Änderungen auf das Remote Repository laden und anderen Entwicklern damit zugängig machen: `git push <REMOTE> <branch-name>`
+- Änderungen auf das remote Repository laden und anderen Entwicklern damit zugängig machen: `git push <remote> <branch-name>`

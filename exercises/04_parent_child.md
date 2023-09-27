@@ -86,7 +86,7 @@ img {
 3. Rufe die eben erstellte Methode bei Komponenten-Initialisierung auf, um den ausgewählten Post einer Variable `currentPost` zuzuweisen.
 4. Stelle die Post Informationen (Title, Description, Author, Image) im HTML File dar.
 
-## Zusatzaufgabe
+### Zusatzaufgabe
 
 1. Erstelle eine `sortRead()` Methode in der "overview" Komponente, welche das Array so sortiert, dass zuerst alle Posts zurückgegeben werden, welche noch nicht "read" sind. Weitere Infos siehe [Doku](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort?retiredLocale=de)
 2. Loope beim HTML File durch den Rückgabewert dieser Methode, anstelle des unsortierten Arrays.
