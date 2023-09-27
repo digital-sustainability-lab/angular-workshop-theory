@@ -42,7 +42,9 @@ Stellt die im Routing Module zugewiesene Komponente des aktiven Route Pfades dar
 ### ...über Angular Router in Methoden in `.ts` Files der Komponenten
 
 ```html
-<button (click)="navigateWithCustomBehavior(id)">navigate by id</button>
+<button (click)="navigateWithCustomBehavior(id)">
+  navigate by id
+</button>
 ```
 
 ```typescript

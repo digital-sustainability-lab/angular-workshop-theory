@@ -1,4 +1,4 @@
-## 03 Data Binding & Directives
+# 03 Data Binding & Directives
 
 --
 
@@ -22,7 +22,9 @@ source (`.ts`) -> view (`.html`)
 - Attribut
 
 ```html
-<mat-slide-toggle [checked]="isToggleChecked"> Slide me! </mat-slide-toggle>
+<mat-slide-toggle [checked]="isToggleChecked">
+  Slide me!
+</mat-slide-toggle>
 ```
 
 --
@@ -34,7 +36,9 @@ source (`.ts`) -> view (`.html`)
 Event
 
 ```html
-<button mat-button (click)="myClickFunctionality()"></button>
+<button mat-button (click)="myClickFunctionality()">
+  Click me
+</button>
 ```
 
 --
@@ -71,7 +75,9 @@ source (`.ts`) <-> view (`.html`)
 - Element wird hinzugefügt / entfernt
 
 ```html
-<div *ngIf="currentCustomer">Hello, {{currentCustomer.name}}</div>
+<div *ngIf="currentCustomer">
+  Hello, {{currentCustomer.name}}
+</div>
 ```
 
 - else
@@ -100,11 +106,14 @@ source (`.ts`) <-> view (`.html`)
 - Zeigt eines von mehreren Elementen an, basierend auf der switch Kondition
 
 ```html
-<div [ngSwitch]="currentItem.color">
-  <app-red-item *ngSwitchCase="'red'" [item]="currentItem"></app-red-item>
-  <app-green-item *ngSwitchCase="'green'" [item]="currentItem"></app-green-item>
+<div [ngSwitch]="item.color">
+  <app-red-item *ngSwitchCase="'red'" [item]="item">
+  </app-red-item>
+  <app-green-item *ngSwitchCase="'green'" [item]="item">
+  </app-green-item>
   <!-- . . . -->
-  <app-unknown-item *ngSwitchDefault [item]="currentItem"></app-unknown-item>
+  <app-unknown-item *ngSwitchDefault [item]="item">
+  </app-unknown-item>
 </div>
 ```
 
@@ -123,7 +132,9 @@ source (`.ts`) <-> view (`.html`)
 Dynamische Definition von Klassen
 
 ```html
-<div [ngClass]="isSpecial ? 'special' : ''">This div is special</div>
+<div [ngClass]="isSpecial ? 'special' : 'normal'">
+  The class of this div is allocated dynamically
+</div>
 ```
 
 --
@@ -133,7 +144,9 @@ Dynamische Definition von Klassen
 Dynamische Definition von Style Attributen
 
 ```html
-<div [ngStyle]="{'max-width.px': widthExp}">some content</div>
+<div [ngStyle]="{'max-width.px': widthExp}">
+  some content
+</div>
 ```
 
 --

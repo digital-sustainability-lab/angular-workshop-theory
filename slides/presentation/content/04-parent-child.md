@@ -41,7 +41,7 @@ Decorators markieren Variablen als In-/Output
 
 ```typescript
 @Input() input: string;
-@Output() outputTrigger: EventEmitter<boolean> = new EventEmitter();
+@Output() output: EventEmitter<boolean> = new EventEmitter();
 ```
 
 --
