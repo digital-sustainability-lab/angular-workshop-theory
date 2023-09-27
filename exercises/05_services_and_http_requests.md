@@ -6,8 +6,7 @@ Erstelle einen Service für deine App und verwende ihn in deiner Overview Kompon
 
 ## 5.2 HTTP-Request ausführen
 
-Benutze den [HTTP-Client](https://angular.io/api/common/http/HttpClient#usage-notes) von Angular um einen ersten GET Request auszuführen. Sende diesen an das vorbereitete Backend mit der url ???????. Bei erfolgreichem Ausführen des requests solltest du folgende Datensatz erhalten:
-?????
+Benutze den [HTTP-Client](https://angular.io/api/common/http/HttpClient#usage-notes) von Angular um einen ersten GET Request auszuführen. Sende diesen an das vorbereitete Backend mit der url `https://angular-workshop.dev.digisus-lab.ch/`
 
 ## 5.3 Verwendung von Daten in Komponente
 
@@ -15,4 +14,4 @@ Versuche nun die vom Request erhaltenen Daten im Komponenten zu verwenden anstel
 
 ### Zusatzaufgabe
 
-Versuche einen Patch Request zu senden, um ein existierenden Blog Post abzuändern
+Versuche einen Patch Request zu senden, um einen existierenden Blog Post abzuändern
