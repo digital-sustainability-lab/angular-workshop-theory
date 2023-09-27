@@ -8,7 +8,7 @@ Erstelle einen Service für deine App und verwende ihn in deiner Overview Kompon
 
 Benutze den [HTTP-Client](https://angular.io/api/common/http/HttpClient#usage-notes) von Angular um einen ersten GET Request auszuführen. Sende diesen an das vorbereitete Backend mit der url `https://angular-workshop.dev.digisus-lab.ch/`
 
-## 5.3 Verwendung von Daten in Komponente
+## 5.3 Verwendung von Daten in Komponenten
 
 Versuche nun die vom Request erhaltenen Daten im Komponenten zu verwenden anstelle des statisch definierten Arrays. Der loop sollte sich nun also auf die live Daten des Backends beziehen und nicht mehr auf im Angular Projekt statisch definierte Daten
 
