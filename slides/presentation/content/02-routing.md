@@ -13,7 +13,7 @@
 
 ## Router Outlet
 
-- stellt die im Routing Module zugewiesene Komponente des aktiven Route Pfades dar
+Stellt die im Routing Module zugewiesene Komponente des aktiven Route Pfades dar
 
 --
 
@@ -58,7 +58,7 @@ navigateWithCustomBehavior(id: number) {
 
 ## Abrufen von URL Paramentern
 
-- mit ActivatedRoute
+mit ActivatedRoute
 
 ```typescript
 id: string;
@@ -67,10 +67,6 @@ constructor(private route: ActivatedRoute) {
 }
 
 ```
-
---
-
-- absolute und relative Pfade
 
 --
 

@@ -37,7 +37,7 @@
 
 ## TS-File in Child
 
-- Decorators markieren Variable als In-/Output
+Decorators markieren Variablen als In-/Output
 
 ```typescript
 @Input() input: string;
