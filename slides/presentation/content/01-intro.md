@@ -43,7 +43,7 @@ gibt bereits vieles out of the box bspw libraries / features (router, forms, ano
 
 --
 
-## Beispiel Komponent
+## Beispiel Komponente
 
 ```typescript [1-12|4]
 import { Component } from "@angular/core";
@@ -65,7 +65,7 @@ Die oben definierte Komponente kann schliesslich via selector (hier `hello-world
 
 --
 
-## Beispiel Komponent
+## Beispiel Komponente
 
 ```html
 <hello-world></hello-world>

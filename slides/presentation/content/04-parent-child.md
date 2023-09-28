@@ -16,12 +16,15 @@
 <app-footer></app-footer>
 ```
 
+Note:
+Parent ruft Child mit Selector auf.
+
 --
 
 ## HTML in Parent
 
 - Aufruf Child per Selektor
-- Parameter Übergabe
+- Parameter Übergabe (an Attribut)
 - `*ngIf` für Rendering nach Condition
 - `*ngFor` für dynamische Darstellung
 
@@ -33,6 +36,9 @@
 ></app-card>
 ```
 
+Note:
+card.content wird hier der app-card als input übergeben, bei trigger des "outputTrigger" wird doSomethingInParent() aufgerufen
+
 --
 
 ## TS-File in Child
@@ -42,14 +48,21 @@ Decorators markieren Variablen als In-/Output
 ```typescript
 @Input() input: string;
 @Output() output: EventEmitter<boolean> = new EventEmitter();
+
+triggerParentToAction() {
+  this.output.emit(true);
+}
 ```
+
+Note:
+bei Aufruf der "triggerParentToAction" Methode im Child wird ein Event emitted, welches im Parent wiederum eine Action triggered. Es können auch komplexere Daten als Event übergeben werden anstelle des Boolean.
 
 --
 
 ## Lifecycle hooks
 
 - Methoden, welche zu einem/mehreren Zeitpunkt(en) durch Angular aufgerufen werden
-- nachfolgend wichtigste Methoden
+- nachfolgend wichtigste Methoden...
 
 --
 

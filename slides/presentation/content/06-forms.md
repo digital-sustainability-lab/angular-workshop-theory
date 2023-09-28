@@ -43,6 +43,9 @@
 - unbekannt bzw. veränderbar -> dynamic
   - `FormBuilder` um `FormGroup` bzw. `FormArray` zu erstellen/verändern
 
+Note:
+Bei Erstellung dynamischer Formulare wird der FormBuilder verwendet
+
 --
 
 ## FormGroup vs. FormArray
@@ -102,8 +105,6 @@
   }
 ```
 
-[Quelle](https://angular.io/api/forms/NgModel)
-
 --
 
 ## Beispiel II: statisches Formular
@@ -132,8 +133,6 @@
     }
   }
 ```
-
-[Quelle](https://angular.io/api/forms/NgModel)
 
 --
 
