@@ -31,7 +31,7 @@ source (`.ts`) -> view (`.html`)
 
 ### Data Binding mit Angular - Event
 
-source (`.ts`) -> view (`.html`)
+source (`.ts`) <- view (`.html`)
 
 Event
 

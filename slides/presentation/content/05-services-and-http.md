@@ -78,7 +78,7 @@ class HeroListComponent {
 
 HTTP Requests können mithilfe des HTTP Clients gemacht werden
 
-```typescript
+```typescript [9]
 // app.module.ts
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
@@ -112,6 +112,7 @@ export class MyService {
   }
 }
 ```
+--
 
 ## HTTP-Requests
 
@@ -119,6 +120,7 @@ export class MyService {
 this.myService.getData()
   .subscribe((data: Data) => (this.serviceData = data));
 ```
+Subscription & Observables sind Teil von [RxJS](https://rxjs.dev/)
 
 Note:
 wichtig: wenn keine subscription vorhanden ist-> kein request gesendet

@@ -112,7 +112,7 @@ aktualisiert sobald state von component angepasst wird
 
 oder als eigene `.html` Datei
 
-```typescript [5]
+```typescript [5,6]
 import { Component } from "@angular/core";
 
 @Component({
@@ -155,3 +155,4 @@ Syntax {{}} für dynamisches rendering DOM wird
 ## Your turn :) --> Übung 1
 
 Übungen & slides findet ihr unter:
+https://github.com/digital-sustainability-lab/angular-workshop-theory
