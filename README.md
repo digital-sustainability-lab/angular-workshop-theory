@@ -2,6 +2,10 @@
 
 Theorie Slides und Übungen
 
+## NodeJS installieren
+
+Direkte Installation [siehe hier](https://nodejs.org/en/download). Über Package Manager (empfohlen) [siehe hier](https://nodejs.org/de/download/package-manager).
+
 ## Exkurs: Git
 
 [Git](https://git-scm.com/) dient als Versionierungstool des Code-Repositories. Plattformen wie [GitHub](https://github.com/) und [GitLab](https://about.gitlab.com/) für remote Repositories, um gemeinsam an einem Projekt arbeiten zu können.
