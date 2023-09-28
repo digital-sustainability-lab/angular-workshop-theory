@@ -13,7 +13,7 @@
 ## Template-driven Forms
 
 - Logik in Template (HTML File)
-- geignet für einzelne Formular Felder
+- geeignet für einzelne Formular Felder
 
 --
 
@@ -44,7 +44,7 @@
   - `FormBuilder` um `FormGroup` bzw. `FormArray` zu erstellen/verändern
 
 Note:
-Bei Erstellung dynamischer Formulare wird der FormBuilder verwendet
+Bei Erstellung dynamischer Formulare ist die Verwendung des FormBuilders hilfreich.
 
 --
 

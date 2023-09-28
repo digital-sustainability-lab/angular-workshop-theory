@@ -82,7 +82,7 @@ bei Aufruf der "triggerParentToAction" Methode im Child wird ein Event emitted, 
 
 ## ngAfterViewInit()
 
-- wird nach der Initialisierung des DOM Elemente (HTML Elemente) ausgeführt
+- wird nach der Initialisierung der DOM Elemente (HTML Elemente) ausgeführt
 - Use Case: wenn DOM Elemente referenziert werden sollen
 
 --
