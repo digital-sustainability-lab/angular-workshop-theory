@@ -69,7 +69,7 @@ Decorators markieren Variablen als In-/Output
 
 ## ngAfterViewInit()
 
-- wird nach der Initialisierung des DOM Elemente (HTML Elemente) ausgeführt
+- wird nach der Initialisierung der DOM Elemente (HTML Elemente) ausgeführt
 - Use Case: wenn DOM Elemente referenziert werden sollen
 
 --

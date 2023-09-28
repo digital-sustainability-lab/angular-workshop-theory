@@ -13,7 +13,7 @@
 ## Template-driven Forms
 
 - Logik in Template (HTML File)
-- geignet für einzelne Formular Felder
+- geeignet für einzelne Formular Felder
 
 --
 

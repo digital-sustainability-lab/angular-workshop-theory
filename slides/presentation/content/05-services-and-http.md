@@ -71,7 +71,8 @@ class HeroListComponent {
   constructor(private service: HeroService) {}
 }
 ```
-
+Notes:
+Dependencies müssen bei Instanzierung einer Class nicht explizit mitgegeben werden sondern wird automatisch von Angular erledigt
 --
 
 ## HTTP-Requests
