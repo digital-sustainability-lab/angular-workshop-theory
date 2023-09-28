@@ -1,6 +1,6 @@
 # Hands-On Workshop Angular
 
-Rowing Sessions Fincon 28.09.23
+Rowing Sessions Fincons 28.09.23
 
 Aaron Sägesser, Kerrie Stauffer
 
