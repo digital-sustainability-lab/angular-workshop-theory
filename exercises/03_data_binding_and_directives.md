@@ -1,6 +1,6 @@
 # 03 - Data binding and Directives
 
-## 3.1 Looping
+## [3.1 Looping](/slides/presentation/content/03-data-binding-directives.md#structural-directives---ngfor)
 
 Füge den untenstehenden Datensatz als statischen Array im `.ts` der erstellen Overview Kompnenten ein.
 Iteriere mit Hilfe von `ngFor` über den Datensatz und erstelle eine `mat-card` mit beliebigem `mat-card-content` (bspw. "Ich bin eine Karte") für jedes Datenobjekt. Der Toggle kann wieder entfernt werden
@@ -54,7 +54,7 @@ mat-card {
 }
 ```
 
-## 3.2 \*ngIf/else
+## 3.2 [\*ngIf/else](/slides/presentation/content/03-data-binding-directives.md#structural-directives---ngif)
 
 Erstelle eine Kondition dass `mat-card-content` nur angezeigt wird, wenn `show` true ist (Inhalt der mat-card ist nicht relevant)
 

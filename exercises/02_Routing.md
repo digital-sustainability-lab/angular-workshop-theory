@@ -9,12 +9,12 @@ Als Beispielprojekt werden wir eine simple Blog-Seite erstellen, auf welcher ein
 ![Detailview](./assets/Detailview.png "Detailview")
 ![Form](./assets/Form.png "Form")
 
-## 2.1 Neue Routes erstellen
+## 2.1 [Neue Routes erstellen](/slides/presentation/content/02-routing.md#21-beispiel-routing-module)
 
 1. Erstelle eine neue Route `/overview` über welche die in der vorherigen Übung erstellte "overview" Komponente erreicht werden kann
 2. Erstelle eine `wildcard` Route, welche alle weiteren URL Pfade auf die zuvor erstellte Route weiterleitet
 
-## 2.2 Router-Outlet und Routerlink nutzen
+## 2.2 [Router-Outlet und Routerlink nutzen](/slides/presentation/content/02-routing.md#22-router-outlet)
 
 1. Erstelle 2 neue Komponenten
    - eine mit Namen "navbar", welche eine Navigation bar werden soll
@@ -28,7 +28,7 @@ Als Beispielprojekt werden wir eine simple Blog-Seite erstellen, auf welcher ein
    - der erste Eintrag "Overview" soll bei klick über einen `RouterLink` auf die bereits existierende "overview" Komponente navigieren
    - der zweite Eintrag "New Post" dient vorerst als Placeholder und wird in einer späteren Übung verwendet
 
-## 2.3 Routing in der Komponente mit URL Parameter
+## 2.3 [Routing in der Komponente mit URL Parameter](/slides/presentation/content/02-routing.md#23-arten-der-navigation)
 
 1. Importiere den Router im `.ts` File der "overview" Komponente
 2. Erstelle eine Methode `navigateToDetail` welche eine number ID entgegennimmt und auf über die URL `/detail/:id` mit der entsprechenden ID auf die "Detail" Komponente navigiert, wobei die ID aus dem Input verwendet werden soll.

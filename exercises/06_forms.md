@@ -2,7 +2,7 @@
 
 In dieser Übung werden wir ein Formular implementieren, um das Erstellen neuer Blog Posts zu ermöglichen.
 
-## 6.1 Statisches Formular erstellen
+## 6.1 [Statisches Formular erstellen](/slides/presentation/content/06-forms.md#beispiel-ii-statisches-formular)
 
 1. Erstelle eine neue Komponente "create-post" und rufe diese über den entsprechenden Menü Eintrag in der Navbar über eine neue Route `create-post` auf.
 2. Erstelle in der neuen Komponente `template-driven` ein Formular mit 4 Input Feldern (Author, Title, Description, Image URL) inklusive `submit` button, welcher die `onSubmit(form)` Methode mit dem Formular als Input aufrufen soll.
@@ -20,7 +20,7 @@ In dieser Übung werden wir ein Formular implementieren, um das Erstellen neuer 
 
 6. Setze Author, Title & Description required.
 
-## 6.2 Daten mit POST Request speichern
+## 6.2 [Daten mit POST Request speichern](/slides/presentation/content/06-forms.md#beispiel-ii-statisches-formular-1)
 
 1. Importiere den `BackendService` in der "create-post" Komponente und erstelle (wenn noch nicht vorhanden) eine `onSubmit(form: NgForm)` Methode.
 2. Erstelle im `BackendService` eine Methode `storeData(newPost)`, welche einen neuen Post entgegennimmt und diesen per POST Request auf die URL `https://angular-workshop.dev.digisus-lab.ch/` sendet.
