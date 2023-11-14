@@ -11,7 +11,7 @@
 
 --
 
-## Beispiel Routing Module
+## 2.1 Beispiel Routing Module
 
 ```typescript
 const routes: Routes = [
@@ -32,7 +32,7 @@ Oben Routes definiert, dem RouterModule mit .forRoot() zugewiesen
 
 --
 
-## Router Outlet
+## 2.2 Router Outlet
 
 - stellt die im Routing Module zugewiesene Komponente des aktiven Route Pfades dar
 - wird im HTML File der App Komponente
@@ -43,7 +43,7 @@ Oben Routes definiert, dem RouterModule mit .forRoot() zugewiesen
 
 --
 
-## Arten der Navigation...
+## 2.3 Arten der Navigation...
 
 --
 

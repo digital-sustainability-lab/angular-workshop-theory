@@ -40,6 +40,10 @@ gibt bereits vieles out of the box bspw libraries / features (router, forms, ano
   - Typescript class
   - HTML template
   - styles
+- Angular bietet Commands, um neue Komponenten, Services, usw. zu erzeugen
+```
+ng generate component nameOfTheNewComponent
+```
 
 --
 
