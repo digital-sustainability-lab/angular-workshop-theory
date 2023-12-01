@@ -9,7 +9,12 @@ Benutze dazu folgende commands:
 ```bash
 npm install -g @angular/cli
 
-ng new my-app
+# generiere neue angular app struktur
+# da wir in diesem tutorial mit dem app.module.ts file
+# arbeiten, benötigen wir die zusätzlichen konfigurationen
+# welche mit --no-standalone --routing und --ssr=false
+# festgelegt werden
+ng new my-app --no-standalone --routing --ssr=false
 
 # teste nun ob die Applikation läuft, es sollte automatisch ein Browserfenster geöffnet werden
 # falls nicht öffne http://localhost:4200
@@ -17,7 +22,7 @@ cd my-app
 ng serve --open
 ```
 
-siehe auch die offizielle Angular Dokumentation [hier](https://angular.io/guide/setup-local)
+siehe auch die offizielle Angular Dokumentation [hier](https://angular.io/guide/setup-local). Die zusätz
 
 ## 1.2 Template mit eigenem Komponenten ersetzen
 
