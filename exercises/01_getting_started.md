@@ -41,6 +41,11 @@ Füge nun ein `slide-toggle` in das Template deiner neuen Komponente ein. Dazu m
 
 Versuche das Label des toggles so zu ändern, dass es dem Wert einer im `.ts` definierten Variabel entspricht. Dazu kann das `[checked]` Attribut im html verwendet werden, welches jeweils einen `Boolean` zurückgibt, basierend auf dem State des Toggles. Dieser Wert kann danach einer frei wählbaren Variable zugewiesen werden, welche im `.ts` File definiert ist und jeweils aktualisiert wird, sobald das Toggle verwändert wird. Näheres zu diesem sogenanten "data binding" werden wir im Kapitel 3 behandeln. Nutze folgende Snippets, um dem Toggle die Funktionalität zu geben.
 
+<details>
+  <summary>Test expand...</summary>
+  It works :D
+</details>
+
 Im `.html`:
 ```html
 <mat-slide-toggle [checked]="checked" color="warning" labelPosition="before">{{
