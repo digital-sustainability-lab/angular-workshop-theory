@@ -50,7 +50,7 @@ Im `.html`:
 
 Im `.component.ts`:
 ```typescript
-  checked: boolean = true;
+checked: boolean = true;
 ```
 
 
