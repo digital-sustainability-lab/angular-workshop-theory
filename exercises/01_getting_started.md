@@ -39,7 +39,20 @@ ng add @angular/material
 
 Füge nun ein `slide-toggle` in das Template deiner neuen Komponente ein. Dazu musst du den Material Component im App Module registrieren, siehe auch unter `display a component` in der [offiziellen Dokumentation](https://material.angular.io/guide/getting-started)
 
-Versuche das Label des toggles so zu ändern, dass es dem Wert einer im `.ts` definierten Variabel entspricht
+Versuche das Label des toggles so zu ändern, dass es dem Wert einer im `.ts` definierten Variabel entspricht. Dazu kann das `[checked]` Attribut im html verwendet werden, welches jeweils einen `Boolean` zurückgibt, basierend auf dem State des Toggles. Dieser Wert kann danach einer frei wählbaren Variable zugewiesen werden, welche im `.ts` File definiert ist und jeweils aktualisiert wird, sobald das Toggle verwändert wird. Näheres zu diesem sogenanten "data binding" werden wir im Kapitel 3 behandeln. Nutze folgende Snippets, um dem Toggle die Funktionalität zu geben.
+
+Im `.html`:
+```html
+<mat-slide-toggle [checked]="checked" color="warning" labelPosition="before">{{
+  label
+}}</mat-slide-toggle>
+```
+
+Im `.component.ts`:
+```typescript
+  checked: boolean = true;
+```
+
 
 Nun sollte deine App also anstelle des Default Templates eine neue Komponente anzeigen. Innerhalb dieser Komponente sollte ein `mat-slide-toggle` angezeigt werden, dessen Label im `.ts` definiert ist.
 
